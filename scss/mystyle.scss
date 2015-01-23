@@ -1,0 +1,115 @@
+@mixin common-section(){
+    max-width: 100em;
+    margin:0 auto;
+}
+
+body,section,form,header,ul,li,input,button,img,h3,h4{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    font-size: 62.5%;
+}
+
+section.numbers{
+    @include common-section();
+    position: relative;
+    top:-3em;
+    ul{
+        border: 1px solid #ccc;
+        margin:0 10%;
+        &:after{
+            clear: both;
+            display: block;
+            content: '';
+        }
+        li{            
+            background: white;
+            list-style: none;
+            float: left;
+            width: 25%;
+            position: relative;
+            text-align: center;
+            padding: 3em 0;
+            h3{
+                font-size: 1.6em;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+            &:after{
+                content:'';
+                background: #ccc;
+                display: block;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top:0;
+            }
+            
+            &:last-child:after{
+                display:none;
+            }
+        }
+    }
+}
+
+section.hero{
+    @include common-section();
+    background-image: url(../image/paris.jpg);
+    background-size: cover;
+    color: white;
+    padding-bottom: 4em;
+    header{
+        img{
+            float: left;
+            width: 120px;
+            height: 50px;
+            margin: 1em 0 0 1em;
+        }
+        ul{
+            float: right;
+            margin: 1em 1em 0 0; 
+            li{
+                list-style: none;
+                float: left;
+                margin-left: 2em;
+                font-size: 1.4em;
+                padding: .2em;
+                border-radius: 4px;
+                &:last-child{
+                    border: 1px solid white;    
+                }
+            }
+        }
+    }
+    h1{
+        clear: both;
+        font-size: 4em;
+        text-align: center;
+        padding-top: 2em; 
+    }
+    
+    h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    form{
+       text-align: center; 
+        input{
+            width: 20em;
+            height: 2em;
+            background: rgba(255,255,255,.5);
+            vertical-align: bottom;
+        }
+        button{
+            background-color: lightgreen;
+            color:white;
+            height:2em;
+            padding: .5em;
+        }
+    }
+}
