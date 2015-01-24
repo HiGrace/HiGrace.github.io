@@ -3,6 +3,8 @@
     margin:0 auto;
 }
 
+$pink:#f799a3;
+
 body,section,form,header,ul,li,input,button,img,h3,h4{
     margin: 0;
     padding: 0;
@@ -58,7 +60,8 @@ section.numbers{
 
 section.hero{
     @include common-section();
-    background-image: url(../image/paris.jpg);
+    font-family:cursive;
+    background-image: url(../image/blackdot.jpg);
     background-size: cover;
     color: white;
     padding-bottom: 4em;
@@ -66,7 +69,6 @@ section.hero{
         img{
             float: left;
             width: 120px;
-            height: 50px;
             margin: 1em 0 0 1em;
         }
         ul{
@@ -81,6 +83,11 @@ section.hero{
                 border-radius: 4px;
                 &:last-child{
                     border: 1px solid white;    
+                }
+                i{
+                    padding: 0 0.5em 0 0;
+                    color: $pink;
+                    font-size: .8em
                 }
             }
         }
@@ -102,14 +109,24 @@ section.hero{
         input{
             width: 20em;
             height: 2em;
+            border-radius: .5em 0 0 .5em;
             background: rgba(255,255,255,.5);
-            vertical-align: bottom;
+            margin-bottom:1.5em;
+            &::-webkit-input-placeholder{
+                color:white;
+                padding-left: 1em;
+            }
         }
+        
         button{
-            background-color: lightgreen;
+            background:url(../image/button.png);
+            background-size: cover;
+            border-radius: 0 1em 1em 0;
             color:white;
-            height:2em;
-            padding: .5em;
+            height:2.4em;
+            width: 4em;
+            padding: 0;
+            margin-left: -0.3em;
         }
     }
 }
