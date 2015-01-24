@@ -5,7 +5,32 @@
 
 $pink:#f799a3;
 
-body,section,form,header,ul,li,input,button,img,h3,h4{
+@mixin section-title(){
+     h3{
+        text-align: center;
+        font-size: 1.8em;
+        font-family:monospace;
+        position: relative;
+        &:after{
+                content:'';
+                background-color:#ccc;
+                width:3.7em;
+                height: 0.15em;
+                position: absolute;
+                bottom: -.3em;
+                left: 50%;
+                margin-left:-2em;
+                
+            }
+    }   
+}
+
+@mixin section-border(){
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 4em;
+}
+
+body,section,form,header,ul,li,input,button,img,h3,h4,ol{
     margin: 0;
     padding: 0;
     border: none;
@@ -13,6 +38,8 @@ body,section,form,header,ul,li,input,button,img,h3,h4{
 
 body{
     font-size: 62.5%;
+    font-family: sans-serif;
+    padding-bottom: 5em;
 }
 
 section.numbers{
@@ -127,6 +154,158 @@ section.hero{
             width: 4em;
             padding: 0;
             margin-left: -0.3em;
+        }
+    }
+}
+
+section.how-it-works{
+    @include common-section();
+    @include section-title();
+    @include section-border();
+    ol{
+        text-align: center;
+        li{
+            list-style: none;
+            display: inline-block;
+            margin: 1.5em 5em;
+        }
+        &.order{
+            li{
+                font-size: 1.4em;
+                color: #ccc;
+                border: solid 1px #ccc;
+                width: 2em;
+                height: 2em;
+                border-radius: 2em;
+                line-height: 2em;
+                position: relative;
+                &:not(:last-child):after{
+                    content: '';
+                    display: block;
+                    width: 10em;
+                    height: .1em;
+                    background-color: #ccc;
+                    left: 2.2em;
+                    top:1em;
+                    position: absolute;
+                }
+            }
+        }
+        &.poster{
+            margin-left: 2em;
+            li{
+                margin: 1.5em 4em;
+                label{
+                    display: block;
+                    font-size: 5em;
+                }
+                span{
+                    font-weight: bold;
+                    font-size: 1.3em;
+                    color: #666;
+                }
+                p{
+                    margin: 1em auto;
+                    text-align: center;
+                    width: 7em;
+                    height: 4em;
+                }
+            }
+        }
+    }
+}
+
+section.why-choose-us{
+    @include common-section();
+    @include section-title();
+    @include section-border();
+    ul{
+        margin: 0 auto;
+        width:80%;
+        text-align: center;
+        li{
+            vertical-align: top;
+            margin: 3em 0;
+            width: 40%;
+            display: inline-block;
+            span{
+                font-size: 5em;
+                vertical-align: top;
+            }
+            div{
+                margin-left: .6em;
+                width: 80%;
+                text-align: left;
+                display: inline-block;
+                label{
+                    font-weight: bold;
+                    font-size: 1.6em;
+                }
+                p{
+                    font-size: 1.2em;
+                    color:#999;
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+section.people{
+    text-align: center;
+    @include common-section();
+    div.buttons{
+        a{
+            display: inline-block;
+            width: 10em;
+            padding: 0.5em;
+            font-size: 1.2em;
+            border: 1px solid gray;
+            &.active{
+                color:white;
+                background: gray;
+            }
+        }
+        +p{
+            font-size: 4em;
+            color:#ddd;
+            margin: 1em auto 0 auto;
+        }
+    }
+    
+    p{
+        font-size: 1.3em;
+        color:#666;
+        width: 80%;
+        margin: 1em auto;
+    }
+    div.ceo{
+        span{
+            display: block;
+            &:first-child{
+                font-size: 1.2em;
+            }
+            &:last-child{
+                font-size: 1.2em;
+                color:#999;
+                margin-top: .5em;
+            }
+        }
+    }
+    div.people-list{
+        margin: 3em 0;
+        img{
+            width:6em;
+            height: 6em;
+            border-radius: 6em;
+            margin:0 1em;
+            opacity: 0.3;
+            &.active{
+                opacity: 1;
+                border:1px solid #ccc;
+                padding: .2em;
+                box-sizing: border-box;
+            }
         }
     }
 }
