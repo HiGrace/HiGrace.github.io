@@ -49,6 +49,13 @@ section.numbers{
     @include common-section();
     position: relative;
     top:-3em;
+    img{
+        position: absolute;
+        width: 35px;
+        top: -14px;
+        right: 80px;
+        z-index: 1;
+    }
     ul{
         border: 2px solid;
         border-image:url(../image/blink2.gif)  30 30 round;
