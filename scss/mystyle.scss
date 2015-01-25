@@ -26,8 +26,10 @@ $pink:#f799a3;
 }
 
 @mixin section-border(){
-    border-bottom: 1px solid #ccc;
     margin-bottom: 4em;
+    border-bottom: solid;
+    border-width: 0 0 2px 0;
+    border-image: url(../image/blink2.gif) 30 30 round;
 }
 
 body,section,form,header,ul,li,input,button,img,h3,h4,ol{
@@ -40,6 +42,7 @@ body{
     font-size: 62.5%;
     font-family: sans-serif;
     padding-bottom: 5em;
+    color: #786969;
 }
 
 section.numbers{
@@ -47,7 +50,8 @@ section.numbers{
     position: relative;
     top:-3em;
     ul{
-        border: 1px solid #ccc;
+        border: 2px solid;
+        border-image:url(../image/blink2.gif)  30 30 round;
         margin:0 10%;
         &:after{
             clear: both;
@@ -69,13 +73,14 @@ section.numbers{
             }
             &:after{
                 content:'';
-                background: #ccc;
+                background: url(../image/blink2.gif);
                 display: block;
-                width: 1px;
+                width: 2px;
                 height: 100%;
                 position: absolute;
                 right: 0;
                 top:0;
+                
             }
             
             &:last-child:after{
@@ -123,7 +128,8 @@ section.hero{
         clear: both;
         font-size: 4em;
         text-align: center;
-        padding-top: 2em; 
+        padding-top: 2em;
+        text-shadow: 3px 3px 3px $pink;
     }
     
     h2{
@@ -210,6 +216,21 @@ section.how-it-works{
                     width: 7em;
                     height: 4em;
                 }
+                &:nth-child(1){
+                    label{
+                        color:#93a395;
+                    }
+                }
+                &:nth-child(2){
+                    label{
+                        color:#fab4bc;
+                    }
+                }
+                &:nth-child(3){
+                    label{
+                        color:#b39da9;
+                    }
+                }
             }
         }
     }
@@ -233,8 +254,8 @@ section.why-choose-us{
                 vertical-align: top;
             }
             div{
-                margin-left: .6em;
-                width: 80%;
+                margin-left: 2em;
+                width: 75%;
                 text-align: left;
                 display: inline-block;
                 label{
