@@ -1,40 +1,41 @@
-/* line 35, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+/* line 36, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
 body, section, form, header, ul, li, input, button, img, h3, h4, ol {
   margin: 0;
   padding: 0;
   border: none; }
 
-/* line 41, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+/* line 42, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
 body {
   font-size: 62.5%;
   font-family: sans-serif;
   padding-bottom: 5em;
   color: #786969; }
 
-/* line 48, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+/* line 49, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
 section.numbers {
   max-width: 100em;
+  min-width: 80em;
   margin: 0 auto;
   position: relative;
   top: -3em; }
-  /* line 52, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 53, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.numbers img {
     position: absolute;
     width: 35px;
     top: -14px;
     right: 80px;
     z-index: 1; }
-  /* line 59, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 60, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.numbers ul {
     border: 2px solid;
     border-image: url(../image/blink2.gif) 30 30 round;
     margin: 0 10%; }
-    /* line 63, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 64, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.numbers ul:after {
       clear: both;
       display: block;
       content: ''; }
-    /* line 68, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 69, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.numbers ul li {
       background: white;
       list-style: none;
@@ -43,12 +44,12 @@ section.numbers {
       position: relative;
       text-align: center;
       padding: 3em 0; }
-      /* line 76, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 77, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.numbers ul li h3 {
         font-size: 1.6em;
         font-weight: bold;
         line-height: 1.2; }
-      /* line 81, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 82, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.numbers ul li:after {
         content: '';
         background: url(../image/blink2.gif);
@@ -58,29 +59,30 @@ section.numbers {
         position: absolute;
         right: 0;
         top: 0; }
-      /* line 93, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 94, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.numbers ul li:last-child:after {
         display: none; }
 
-/* line 100, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+/* line 101, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
 section.hero {
   max-width: 100em;
+  min-width: 80em;
   margin: 0 auto;
   font-family: cursive;
   background-image: url(../image/blackdot.jpg);
   background-size: cover;
   color: white;
   padding-bottom: 4em; }
-  /* line 108, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 109, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.hero header img {
     float: left;
     width: 120px;
     margin: 1em 0 0 1em; }
-  /* line 113, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 114, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.hero header ul {
     float: right;
     margin: 1em 1em 0 0; }
-    /* line 116, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 117, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.hero header ul li {
       list-style: none;
       float: left;
@@ -88,40 +90,40 @@ section.hero {
       font-size: 1.4em;
       padding: 0.2em;
       border-radius: 4px; }
-      /* line 123, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 124, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.hero header ul li:last-child {
         border: 1px solid white; }
-      /* line 126, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 127, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.hero header ul li i {
         padding: 0 0.5em 0 0;
         color: #f799a3;
         font-size: 0.8em; }
-  /* line 134, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 135, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.hero h1 {
     clear: both;
     font-size: 4em;
     text-align: center;
     padding-top: 2em;
     text-shadow: 3px 3px 3px #f799a3; }
-  /* line 142, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 143, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.hero h2 {
     font-size: 2em;
     text-align: center; }
-  /* line 147, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 148, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.hero form {
     text-align: center; }
-    /* line 149, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 150, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.hero form input {
       width: 20em;
       height: 2em;
       border-radius: 0.5em 0 0 0.5em;
       background: rgba(255, 255, 255, 0.5);
       margin-bottom: 1.5em; }
-      /* line 155, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 156, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.hero form input::-webkit-input-placeholder {
         color: white;
         padding-left: 1em; }
-    /* line 161, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 162, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.hero form button {
       background: url(../image/button.png);
       background-size: cover;
@@ -132,21 +134,22 @@ section.hero {
       padding: 0;
       margin-left: -0.3em; }
 
-/* line 174, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+/* line 175, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
 section.how-it-works {
   max-width: 100em;
+  min-width: 80em;
   margin: 0 auto;
   margin-bottom: 4em;
   border-bottom: solid;
   border-width: 0 0 2px 0;
   border-image: url(../image/blink2.gif) 30 30 round; }
-  /* line 9, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 10, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.how-it-works h3 {
     text-align: center;
     font-size: 1.8em;
     font-family: monospace;
     position: relative; }
-    /* line 14, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 15, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.how-it-works h3:after {
       content: '';
       background-color: #ccc;
@@ -156,15 +159,15 @@ section.how-it-works {
       bottom: -0.3em;
       left: 50%;
       margin-left: -2em; }
-  /* line 178, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 179, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.how-it-works ol {
     text-align: center; }
-    /* line 180, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 181, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.how-it-works ol li {
       list-style: none;
       display: inline-block;
       margin: 1.5em 5em; }
-    /* line 186, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 187, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.how-it-works ol.order li {
       font-size: 1.4em;
       color: #ccc;
@@ -174,7 +177,7 @@ section.how-it-works {
       border-radius: 2em;
       line-height: 2em;
       position: relative; }
-      /* line 195, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 196, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.how-it-works ol.order li:not(:last-child):after {
         content: '';
         display: block;
@@ -184,52 +187,53 @@ section.how-it-works {
         left: 2.2em;
         top: 1em;
         position: absolute; }
-    /* line 207, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 208, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.how-it-works ol.poster {
-      margin-left: 2em; }
-      /* line 209, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      margin-left: 4em; }
+      /* line 210, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.how-it-works ol.poster li {
         margin: 1.5em 4em; }
-        /* line 211, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 212, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.how-it-works ol.poster li label {
           display: block;
           font-size: 5em; }
-        /* line 215, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 216, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.how-it-works ol.poster li span {
           font-weight: bold;
           font-size: 1.3em;
           color: #666; }
-        /* line 220, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 221, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.how-it-works ol.poster li p {
           margin: 1em auto;
           text-align: center;
           width: 7em;
           height: 4em; }
-        /* line 227, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 228, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.how-it-works ol.poster li:nth-child(1) label {
           color: #93a395; }
-        /* line 232, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 233, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.how-it-works ol.poster li:nth-child(2) label {
           color: #fab4bc; }
-        /* line 237, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 238, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.how-it-works ol.poster li:nth-child(3) label {
           color: #b39da9; }
 
-/* line 246, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+/* line 247, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
 section.why-choose-us {
   max-width: 100em;
+  min-width: 80em;
   margin: 0 auto;
   margin-bottom: 4em;
   border-bottom: solid;
   border-width: 0 0 2px 0;
   border-image: url(../image/blink2.gif) 30 30 round; }
-  /* line 9, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 10, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.why-choose-us h3 {
     text-align: center;
     font-size: 1.8em;
     font-family: monospace;
     position: relative; }
-    /* line 14, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 15, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.why-choose-us h3:after {
       content: '';
       background-color: #ccc;
@@ -239,86 +243,87 @@ section.why-choose-us {
       bottom: -0.3em;
       left: 50%;
       margin-left: -2em; }
-  /* line 250, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 251, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.why-choose-us ul {
     margin: 0 auto;
     width: 80%;
     text-align: center; }
-    /* line 254, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 255, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.why-choose-us ul li {
       vertical-align: top;
       margin: 3em 0;
       width: 40%;
       display: inline-block; }
-      /* line 259, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 260, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.why-choose-us ul li span {
         font-size: 5em;
         vertical-align: top; }
-      /* line 263, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 264, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.why-choose-us ul li div {
         margin-left: 2em;
         width: 75%;
         text-align: left;
         display: inline-block; }
-        /* line 268, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 269, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.why-choose-us ul li div label {
           font-weight: bold;
           font-size: 1.6em; }
-        /* line 272, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+        /* line 273, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
         section.why-choose-us ul li div p {
           font-size: 1.2em;
           color: #999;
           line-height: 1.4em; }
 
-/* line 282, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+/* line 283, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
 section.people {
   text-align: center;
   max-width: 100em;
+  min-width: 80em;
   margin: 0 auto; }
-  /* line 286, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 287, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.people div.buttons a {
     display: inline-block;
     width: 10em;
     padding: 0.5em;
     font-size: 1.2em;
     border: 1px solid gray; }
-    /* line 292, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 293, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.people div.buttons a.active {
       color: white;
       background: gray; }
-  /* line 297, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 298, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.people div.buttons + p {
     font-size: 4em;
     color: #ddd;
     margin: 1em auto 0 auto; }
-  /* line 304, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 305, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.people p {
     font-size: 1.3em;
     color: #666;
     width: 80%;
     margin: 1em auto; }
-  /* line 311, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 312, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.people div.ceo span {
     display: block; }
-    /* line 313, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 314, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.people div.ceo span:first-child {
       font-size: 1.2em; }
-    /* line 316, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 317, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.people div.ceo span:last-child {
       font-size: 1.2em;
       color: #999;
       margin-top: 0.5em; }
-  /* line 323, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+  /* line 324, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
   section.people div.people-list {
     margin: 3em 0; }
-    /* line 325, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+    /* line 326, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
     section.people div.people-list img {
       width: 6em;
       height: 6em;
       border-radius: 6em;
       margin: 0 1em;
       opacity: 0.3; }
-      /* line 331, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
+      /* line 332, /Users/twer/3days3pages/HiGrace.github.io/scss/mystyle.scss */
       section.people div.people-list img.active {
         opacity: 1;
         border: 1px solid #ccc;
