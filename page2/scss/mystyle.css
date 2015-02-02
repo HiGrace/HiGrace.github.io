@@ -1,36 +1,38 @@
-/* line 4, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 5, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 body, section, form, header, ul, li, input, button, img, h3, h4, ol {
   margin: 0;
   padding: 0;
   border: none; }
 
-/* line 10, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 11, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 li {
   list-style: none; }
 
-/* line 13, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 14, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 body {
   font-size: 62.5%;
   font-family: sans-serif;
   padding-bottom: 5em;
   color: #786969; }
 
-/* line 20, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 21, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 header, .main-container {
   max-width: 100em;
   min-width: 80em;
   margin: 0 auto; }
 
-/* line 26, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 27, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 header {
   background-color: #fffcf7;
   padding: 1em;
   text-align: center;
-  position: relative; }
-  /* line 31, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  position: relative;
+  box-shadow: 0px 1px 3px #e6e6e6; }
+  /* line 33, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header a.new-tweet {
     float: left;
     color: white;
+    position: relative;
     margin: 0 1.5em 0 0;
     background-color: #b39da9;
     width: 3em;
@@ -38,54 +40,63 @@ header {
     text-align: center;
     border-radius: 3em;
     line-height: 4; }
-    /* line 41, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 44, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header a.new-tweet i {
       font-size: 2em; }
-  /* line 45, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 47, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    header a.new-tweet:after {
+      content: '';
+      background-color: #e6e6e6;
+      width: 0.1em;
+      height: 5em;
+      position: absolute;
+      left: 4em;
+      margin-top: -0.8em; }
+  /* line 56, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header ul.top-menu {
     float: left;
     padding-top: 0.5em; }
-    /* line 48, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 59, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header ul.top-menu li {
       margin: 0 0.5em;
       display: inline-block;
       width: 2em;
       height: 2em;
       border-radius: 2em;
-      border: solid 1px grey;
+      border: solid 1px #e6e6e6;
       font-size: 1em;
       line-height: 2; }
-  /* line 59, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 70, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header i.fa-twitter {
     font-size: 2.5em;
     color: #b39da9;
     margin-bottom: 5px;
     padding-top: 3px; }
-  /* line 65, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 76, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header div.right-side {
     position: absolute;
     top: 0;
     right: 1em;
     margin-top: 1em; }
-    /* line 70, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 81, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header div.right-side form {
       display: inline-block;
       width: 15em;
       height: 2em;
       background-color: white;
       border-radius: 2em;
-      border: 1px solid grey;
+      border: 1px solid #e6e6e6;
       line-height: 2em; }
-      /* line 78, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 89, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       header div.right-side form i {
-        color: grey; }
-    /* line 83, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+        color: #e6e6e6; }
+    /* line 94, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header div.right-side a.avatar img {
       margin-left: 1em;
       width: 3em;
       height: 3em;
       border-radius: 3em;
-      border: 1px solid grey;
+      border: 1px solid #e6e6e6;
       vertical-align: middle; }
 
 /*# sourceMappingURL=mystyle.css.map */

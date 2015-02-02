@@ -1,5 +1,6 @@
 $light-yellow: #fffcf7;
 $light-purple: #b39da9;
+$light-grey: #e6e6e6;
 
 body,section,form,header,ul,li,input,button,img,h3,h4,ol{
     margin: 0;
@@ -28,9 +29,11 @@ header{
     padding:1em;
     text-align: center;
     position: relative;
+    box-shadow: 0px 1px 3px $light-grey;
     a.new-tweet{
         float: left;
         color: white;
+        position: relative;
         margin: 0 1.5em 0 0;
         background-color: $light-purple;
         width:3em;
@@ -41,6 +44,14 @@ header{
         i{
             font-size:2em;
         }
+         &:after{content: '';
+                background-color: $light-grey;
+                width: 0.1em;
+                height: 5em;
+                position: absolute;
+                left: 4em;
+                margin-top: -0.8em;
+            }
     }
     ul.top-menu{
         float:left;
@@ -51,7 +62,7 @@ header{
             width: 2em;
             height: 2em;
             border-radius: 2em;
-            border: solid 1px grey;
+            border: solid 1px $light-grey;
             font-size: 1em;
             line-height: 2;
         }
@@ -73,10 +84,10 @@ header{
         height: 2em;
         background-color: white;
         border-radius: 2em;
-        border: 1px solid grey;
+        border: 1px solid $light-grey;
         line-height: 2em;
         i{
-            color: grey;
+            color: $light-grey;
         }
     }
     a.avatar{
@@ -85,7 +96,7 @@ header{
             width: 3em;
             height: 3em;
             border-radius: 3em;
-            border: 1px solid grey;
+            border: 1px solid $light-grey;
             vertical-align: middle;
         }
     }
