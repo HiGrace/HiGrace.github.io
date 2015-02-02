@@ -1,0 +1,14 @@
+/* line 1, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+body, section, form, header, ul, li, input, button, img, h3, h4, ol {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+/* line 7, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+body {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  padding-bottom: 5em;
+  color: #786969; }
+
+/*# sourceMappingURL=mystyle.css.map */

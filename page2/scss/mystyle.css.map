@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "mystyle.css",
+  "sources": [
+    "mystyle.scss"
+  ],
+  "names": [],
+  "mappings": ";AAAA,MAAM,SAAS,MAAM,QAAQ,IAAI,IAAI,OAAO,QAAQ,KAAK,IAAI,IAAI;EAC7D,QAAQ;EACR,SAAS;EACT,QAAQ;;;AAGZ;EACI,WAAW;EACX,aAAa;EACb,gBAAgB;EAChB,OAAO",
+  "sourceRoot": ""
+}
