@@ -50,22 +50,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 23, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 26, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 body, section, form, header, ul, li, input, button, img, h3, h4, ol, aside, div {
   margin: 0;
   padding: 0;
   border: none; }
 
-/* line 28, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 31, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 a {
   color: white;
   text-decoration: none; }
 
-/* line 33, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 36, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 li {
   list-style: none; }
 
-/* line 36, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 39, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 body {
   font-size: 62.5%;
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -75,7 +75,7 @@ body {
   color: #786969;
   background-color: #f0ece6; }
 
-/* line 46, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 49, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 header {
   max-width: 120em;
   min-width: 80em;
@@ -86,22 +86,22 @@ header {
   text-align: center;
   position: relative;
   box-shadow: 0px 1px 3px #e6e6e6; }
-  /* line 53, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 56, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header a.new-tweet {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
     float: left;
     color: white;
     position: relative;
     margin: 0 1.5em 0 1em;
     background-color: #b39da9;
-    width: 3em;
-    height: 3em;
     text-align: center;
-    border-radius: 3em;
     line-height: 4; }
-    /* line 64, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 65, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header a.new-tweet i {
       font-size: 2em; }
-    /* line 67, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 68, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header a.new-tweet:after {
       content: '';
       background-color: #e6e6e6;
@@ -110,11 +110,11 @@ header {
       position: absolute;
       left: 4em;
       margin-top: -0.8em; }
-  /* line 76, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 77, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header ul.top-menu {
     float: left;
     padding-top: 0.5em; }
-    /* line 79, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 80, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header ul.top-menu li {
       margin: 0 0.5em;
       display: inline-block;
@@ -124,19 +124,19 @@ header {
       border: solid 1px #e6e6e6;
       font-size: 1em;
       line-height: 2; }
-  /* line 90, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 89, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header i.fa-twitter {
     font-size: 2.5em;
     color: #b39da9;
     margin-bottom: 5px;
     padding-top: 3px; }
-  /* line 96, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 95, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   header div.right-side {
     position: absolute;
     top: 0;
     right: 1em;
     margin-top: 1em; }
-    /* line 101, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 100, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header div.right-side form {
       display: inline-block;
       width: 15em;
@@ -145,10 +145,10 @@ header {
       border-radius: 2em;
       border: 1px solid #e6e6e6;
       line-height: 2em; }
-      /* line 109, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 108, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       header div.right-side form i {
         color: #e6e6e6; }
-    /* line 114, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 113, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     header div.right-side a.avatar img {
       margin-left: 1em;
       width: 3em;
@@ -157,59 +157,59 @@ header {
       border: 1px solid #e6e6e6;
       vertical-align: middle; }
 
-/* line 126, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+/* line 123, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
 .main-container {
   max-width: 120em;
   min-width: 80em;
   margin: 0 auto;
   text-align: center;
   overflow: hidden; }
-  /* line 129, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 126, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   .main-container aside.personal {
     color: white;
     margin-bottom: -1000em;
     padding-bottom: 1000em;
     background-color: #b39da9;
     float: left;
-    width: 25%; }
-    /* line 136, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    width: 20%; }
+    /* line 133, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     .main-container aside.personal section.personal-info {
       padding: 5em 2em 2em;
       text-align: center; }
-      /* line 139, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 136, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.personal-info img {
         width: 8em;
         height: 8em;
         border-radius: 8em; }
-      /* line 144, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 139, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.personal-info h4 {
         font-weight: bolder;
         padding: 0.5em 0;
         font-size: 1.4em; }
-      /* line 149, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 144, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.personal-info p {
         line-height: 1.3; }
-      /* line 153, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 148, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.personal-info a i {
         margin: 0.5em 0; }
-      /* line 157, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 152, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.personal-info a.follow {
         display: block;
-        background-color: #796871;
+        background-color: #927283;
         width: 8em;
         height: 2em;
         text-align: center;
         line-height: 2em;
         border-radius: 8em;
         margin: 1em auto 0; }
-    /* line 169, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 164, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     .main-container aside.personal section.my-gallary {
       position: relative; }
-      /* line 171, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 166, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.my-gallary img {
         width: 33.3%;
         float: left; }
-      /* line 175, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 170, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.my-gallary span.play {
         position: absolute;
         display: inline-block;
@@ -221,32 +221,90 @@ header {
         color: white;
         top: 4em;
         left: 4em; }
-    /* line 189, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    /* line 182, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
     .main-container aside.personal section.my-activity {
       text-align: left;
       padding: 2em; }
-      /* line 192, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 185, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.my-activity h5 {
         padding: 0 0 1em; }
-      /* line 195, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      /* line 188, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
       .main-container aside.personal section.my-activity li {
         line-height: 2em;
-        color: #796871; }
-        /* line 198, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+        color: #927283; }
+        /* line 191, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
         .main-container aside.personal section.my-activity li a {
           text-decoration: underline; }
-  /* line 204, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+  /* line 197, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   .main-container div.content-container {
     margin-bottom: -1000em;
     padding-bottom: 1000em;
     float: left;
-    width: 50%; }
-  /* line 210, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    width: 60%; }
+  /* line 203, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
   .main-container aside.other-info {
+    color: #6f6d65;
     margin-bottom: -1000em;
     padding-bottom: 1000em;
+    text-align: left;
     background-color: #fffcf7;
     float: right;
-    width: 25%; }
+    width: 20%; }
+    /* line 211, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    .main-container aside.other-info h5 {
+      font-size: 1.2em;
+      padding-bottom: 1em; }
+    /* line 215, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    .main-container aside.other-info section.hot {
+      padding: 2.5em 2em; }
+      /* line 218, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      .main-container aside.other-info section.hot ul li {
+        color: #b39da9;
+        font-size: 1.1em;
+        line-height: 1.7em; }
+    /* line 225, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+    .main-container aside.other-info section.recommand {
+      padding: 2.5em 2em;
+      position: relative; }
+      /* line 228, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      .main-container aside.other-info section.recommand a {
+        position: absolute;
+        color: #b39da9;
+        right: 1em;
+        top: 2em;
+        font-size: 1.2em; }
+      /* line 236, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+      .main-container aside.other-info section.recommand ul li {
+        padding-top: 0.2em;
+        font-size: 1.1em;
+        line-height: 4em;
+        position: relative; }
+        /* line 241, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+        .main-container aside.other-info section.recommand ul li img {
+          width: 3em;
+          height: 3em;
+          border-radius: 3em;
+          vertical-align: top;
+          margin-right: 1em; }
+        /* line 246, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+        .main-container aside.other-info section.recommand ul li div {
+          display: inline-block; }
+          /* line 248, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+          .main-container aside.other-info section.recommand ul li div span {
+            display: block;
+            width: 9em;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            line-height: 1.3em; }
+            /* line 255, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+            .main-container aside.other-info section.recommand ul li div span.position {
+              color: #c6c5c0; }
+        /* line 261, /Users/twer/3days3pages/HiGrace.github.io/page2/scss/mystyle.scss */
+        .main-container aside.other-info section.recommand ul li i {
+          position: absolute;
+          top: 0.5em;
+          right: 1em;
+          font-size: 1.5em; }
 
 /*# sourceMappingURL=mystyle.css.map */
